@@ -1,12 +1,12 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-
+import Logo from '../assets/logo.png'
 function BreadCrumbHero({title}:{title:string}) {
     return (
         <div className='bg-cart_image bg-cover bg-center bg-no-repeat'>
             <div className='flex flex-col items-center bg-white/50 py-20 backdrop-blur-sm'>
-                <Image src={require("../assets/logo.png")} alt='Logo' style={{ width: 78, height: 48, objectFit: "cover" }} />
+                <Image src={Logo} alt='Logo' style={{ width: 78, height: 48, objectFit: "cover" }} />
                 <h2 className='text-[48px] font-medium text-black'>{title}</h2>
                 <div className='flex items-center gap-x-3'>
                     <p className='font-medium text-[16px] text-black'>Home</p>

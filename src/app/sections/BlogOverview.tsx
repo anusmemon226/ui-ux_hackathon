@@ -1,11 +1,11 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-
+import BlogImage from "../assets/blog_images/image_1.jpg"
 function BlogOverview() {
     return (
         <div className='mb-10'>
-            <Image src={require("../assets/blog_images/image_1.jpg")} className='h-[500px] max-md:h-[350px]' alt='blog_image' style={{objectFit: "cover" }} />
+            <Image src={BlogImage} className='h-[500px] max-md:h-[350px]' alt='blog_image' style={{objectFit: "cover" }} />
             <div className='flex flex-wrap py-2 gap-x-10'>
                 <div className='flex items-center'>
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">

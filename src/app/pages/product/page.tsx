@@ -2,7 +2,7 @@
 import RelatedProducts from '@/app/sections/RelatedProducts'
 import Image from 'next/image'
 import React from 'react'
-
+import ProductImage from "../../assets/products_images/product_1.png"
 function page() {
     return (
         <div>
@@ -32,13 +32,13 @@ function page() {
                 <div className='flex max-lg:flex-col gap-x-5 py-8'>
                     <div className='flex max-md:flex-col-reverse max-md:items-center max-lg:justify-center gap-x-3 lg:w-[50%]'>
                         <div className='max-md:flex max-sm:justify-center overflow-x-scroll max-md:gap-5 max-md:mt-4'>
-                            <Image src={require("../../assets/products_images/product_1.png")} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
-                            <Image src={require("../../assets/products_images/product_1.png")} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
-                            <Image src={require("../../assets/products_images/product_1.png")} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
-                            <Image src={require("../../assets/products_images/product_1.png")} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
+                            <Image src={ProductImage} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
+                            <Image src={ProductImage} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
+                            <Image src={ProductImage} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
+                            <Image src={ProductImage} className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] mb-6" alt='product' style={{  objectFit: "cover" }} />
                         </div>
                         <div className='lg:flex-1'>
-                            <Image src={require("../../assets/products_images/product_1.png")} className="w-[500px] lg:w-[420px]" alt='product' style={{ height: 500, objectFit: "cover" }} />
+                            <Image src={ProductImage} className="w-[500px] lg:w-[420px]" alt='product' style={{ height: 500, objectFit: "cover" }} />
                         </div>
                     </div>
                     <div className='w-[100%]  lg:w-[50%]'>

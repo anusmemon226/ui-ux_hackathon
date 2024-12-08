@@ -3,7 +3,7 @@ import BreadCrumbHero from '@/app/sections/BreadCrumbHero'
 import WhyUs from '@/components/WhyUs'
 import Image from 'next/image'
 import React from 'react'
-
+import AddToCartImg from '../../assets/addedToCart.png'
 function page() {
     return (
         <div className=''>
@@ -24,7 +24,7 @@ function page() {
                         <tbody className=''>
                             <tr className=''>
                                 <td className=''>
-                                    <Image src={require("../../assets/addedToCart.png")} style={{ width: 105, height: 105, objectFit: "cover" }} alt='Cart Image' />
+                                    <Image src={AddToCartImg} style={{ width: 105, height: 105, objectFit: "cover" }} alt='Cart Image' />
                                 </td>
                                 <td><p className='text-[#9F9F9F] text-[16px]'>Asgaard sofa</p></td>
                                 <td><p className='text-[#9F9F9F] text-[16px]'>Rs. 250,000.00</p></td>

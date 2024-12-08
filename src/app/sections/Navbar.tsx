@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
-
+import CartImage from "../assets/addedToCart.jpg"
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -71,7 +71,7 @@ function Navbar() {
                     <div className='mt-16'>
                         <div className='flex justify-between items-center my-3'>
                             <div className='flex flex-1 flex-wrap items-center'>
-                                <Image src={require("../assets/addedToCart.jpg")} className='rounded-xl mr-4' style={{ width: 105, height: 105, objectFit: "cover" }} alt='img' />
+                                <Image src={CartImage} className='rounded-xl mr-4' style={{ width: 105, height: 105, objectFit: "cover" }} alt='img' />
                                 <div className=''>
                                     <p>Asgaard sofa</p>
                                     <p>1 x Rs. 250,000.00</p>

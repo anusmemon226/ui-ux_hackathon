@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import ProductImage from "../app/assets/products_images/product_1.png"
 function ProductCard() {
     const router = useRouter()
     const [showPopup, setShowPopup] = useState(false)
@@ -10,7 +11,7 @@ function ProductCard() {
             <div className='flex justify-center items-center bg-[#E97171] absolute top-5 right-5 rounded-full w-[48px] h-[48px]'>
                 <p className='text-white text-[16px]'>-30%</p>
             </div>
-            <Image src={require("../app/assets/products_images/product_1.png")} style={{ width: "285px", height: "300px", objectFit: "cover" }} alt='Product' />
+            <Image src={ProductImage} style={{ width: "285px", height: "300px", objectFit: "cover" }} alt='Product' />
             <div className='bg-[#F4F5F7] p-4'>
                 <h2 className='font-semibold text-[24px] py-1'>Syltherine</h2>
                 <p className='text-[16px] font-medium text-[#898989] py-1'>Stylish cafe chair</p>
