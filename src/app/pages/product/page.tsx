@@ -3,6 +3,7 @@ import RelatedProducts from '@/app/sections/RelatedProducts'
 import Image from 'next/image'
 import React from 'react'
 import ProductImage from "../../assets/products_images/product_1.png"
+import descriptionImage from "../../assets/description_image.png"
 function page() {
     return (
         <div>
@@ -168,10 +169,10 @@ function page() {
                     </div>
                     <div className='flex flex-wrap justify-center gap-y-6 gap-x-6 mt-4 items-center'>
                         <div className='bg-[#F9F1E7] flex justify-center items-center'>
-                            <Image src={require("../../assets/description_image.png")} style={{objectFit:"cover"}} className='mr-10 lg:w-[700px]' alt='image' />
+                            <Image src={descriptionImage} style={{objectFit:"cover"}} className='mr-10 lg:w-[700px]' alt='image' />
                         </div>
                         <div className='bg-[#F9F1E7] flex justify-center items-center'>
-                            <Image src={require("../../assets/description_image.png")} style={{objectFit:"cover"}} className='mr-10 lg:w-[700px]' alt='image' />
+                            <Image src={descriptionImage} style={{objectFit:"cover"}} className='mr-10 lg:w-[700px]' alt='image' />
                         </div>
                     </div>
                 </div>
